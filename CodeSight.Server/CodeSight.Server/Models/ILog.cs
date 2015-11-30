@@ -11,10 +11,10 @@ namespace CodeSight.Server.Models
         string ProjectId { get; set; }
         string MethodName { get; set; }
         string Message { get; set; }
-        string LogType { get; set; }
+        string LogType { set; }
         List<string> Parameters { get; set; }
-        DateTime DateCreated { get; set; }
+        DateTime DateCreated { set; }
 
-        void WriteLog(ILog log);
+        void WriteLog();
     }
 }
