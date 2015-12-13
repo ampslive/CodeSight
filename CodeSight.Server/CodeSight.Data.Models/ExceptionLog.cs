@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CodeSight.Data.Models
 {
-    class ExceptionLog
+    public class ExceptionLog
     {
         
         

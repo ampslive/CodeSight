@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CodeSight.Data.Models
 {
-    public class MessageLog : Log
+    public class MessageLog : Log<MessageLog>
     {
         protected override string LogType { set { value = "M"; } }
         public MessageLog()
@@ -12,9 +12,14 @@ namespace CodeSight.Data.Models
 
         }
 
-        public override void WriteLog()
-        {
+        //public override void WriteLog(MessageLog ml)
+        //{
 
+        //}
+
+        public void WriteLog(string message)
+        {
+            //LogSerializeToJSON()
         }
     }
 }
